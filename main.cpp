@@ -17,5 +17,18 @@ int main()
     //h.makeMove();
     Referee r;
     Computer c;
-    r.refGame(&h, &c);
+
+    Player* result = r.refGame(&h, &c);
+    if (result == &h)
+    {
+        cout << "Player " << h.getName() << " wins!" << endl;
+    }
+    else if (result == &c)
+    {
+        cout << "Player " << c.getName() << " wins!" << endl;
+    }
+    else
+    {
+        cout << "It's a tie!" << endl;
+    }
 }

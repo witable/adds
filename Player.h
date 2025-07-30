@@ -11,7 +11,7 @@ class Player
     public:
         Player();
         string getName();
-        virtual char makeMove();
+        virtual char makeMove() = 0;
         Player(string name);
 };
 

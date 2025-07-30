@@ -3,10 +3,7 @@
 #include "Player.h"
 using namespace std;
 
-Computer::Computer()
-{
-    this->name = "Computer";
-}
+Computer::Computer() : Player("Computer") {}
 
 char Computer::makeMove()
 {

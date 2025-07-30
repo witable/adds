@@ -17,7 +17,3 @@ string Player::getName()
     return this->name;
 }
 
-char Player::makeMove()
-{
-    return 'R';
-}
