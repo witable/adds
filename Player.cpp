@@ -1,6 +1,6 @@
 #include <iostream>
-#include "Human.h"
 #include "Player.h"
+using namespace std;
 
 Player::Player()
 {
@@ -19,8 +19,5 @@ string Player::getName()
 
 char Player::makeMove()
 {
-    char a;
-    cout << "Enter move ";
-    cin >> a;
-    return a;
+    return 'R';
 }

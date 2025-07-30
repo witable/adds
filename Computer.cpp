@@ -1,6 +1,6 @@
 #include <iostream>
-#include "Player.h"
 #include "Computer.h"
+#include "Player.h"
 using namespace std;
 
 Computer::Computer()

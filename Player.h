@@ -1,16 +1,17 @@
 #ifndef PLAYER_H
 #define PLAYER_H
-#include <iostream>
-#include "Human.h"
 
-class Player : public Human
+#include <iostream>
+using namespace std;
+
+class Player
 {
     protected:
-        
-        string getName();
+        string name;
     public:
         Player();
-        virtual char makeMove() = 0;
+        string getName();
+        virtual char makeMove();
         Player(string name);
 };
 

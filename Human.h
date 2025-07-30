@@ -4,14 +4,14 @@
 #include "Player.h"
 using namespace std;
 
-class Human
+class Human : public Player
 {
     protected:
-        string name;
     
     public:
         Human(string name);
         Human();
-
+        char makeMove();
 };
+
 #endif
