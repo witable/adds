@@ -13,7 +13,7 @@ Player* Referee::refGame(Player * player1, Player * player2)
         return player2;
     } else if (P1 == 'R' && P2 == 'S')
     {
-        return player2;
+        return player1;
     }
     if (P1 == 'P' && P2 == 'R')
     {
