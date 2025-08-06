@@ -6,7 +6,11 @@
 #include "Rock.h"
 #include "Paper.h"
 #include "Scissors.h"
-
+#include "Ninja.h"
+#include "Pirate.h"
+#include "Robot.h"
+#include "Zombie.h"
+#include "Monkey.h"
 
 using namespace std;
 
@@ -17,6 +21,12 @@ private:
     Rock rock;
     Paper paper;
     Scissors scissors;
+    Monkey monkey;
+    Robot robot;
+    Zombie zombie;
+    Ninja ninja;
+    Pirate pirate;
+    
 public:
     MoveMaker();
     Move stringToMove(string input);
