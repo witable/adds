@@ -3,9 +3,12 @@
 #include "Player.h"
 using namespace std;
 
-Computer::Computer() : Player("Computer") {}
-
-char Computer::makeMove()
+Computer::Computer() : Player("Computer") 
 {
-    return 'R';
+    move = Rock();
+}
+
+Move* Computer::makeMove()
+{
+    return &move;
 }

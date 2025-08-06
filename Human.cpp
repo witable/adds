@@ -16,11 +16,13 @@ Human::Human(string name)
 
    
 
-char Human::makeMove()
+Move* Human::makeMove()
 {
-     char a;
+
+    string moveInput;
     cout << "Enter move: ";
-    cin >> a;
+    cin >> moveInput;
     cout << "\n";
-    return a;
+    move = moveMaker.stringToMove(moveInput);
+    return &move;
 }
