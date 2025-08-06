@@ -14,9 +14,9 @@ class MoveMaker
 {
 private:
     unordered_map<string, Move> possibleMoves;
-    Rock r;
-    Paper p;
-    Scissors s;
+    Rock rock;
+    Paper paper;
+    Scissors scissors;
 public:
     MoveMaker();
     Move stringToMove(string input);

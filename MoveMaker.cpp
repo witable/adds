@@ -3,9 +3,9 @@
 
 MoveMaker::MoveMaker()
 {
-    possibleMoves["Rock"] = r;
-    possibleMoves["Scissors"] = s;
-    possibleMoves["Paper"] = p;
+    possibleMoves["Rock"] = rock;
+    possibleMoves["Scissors"] = scissors;
+    possibleMoves["Paper"] = paper;
 }
 
 Move MoveMaker::stringToMove(string input)

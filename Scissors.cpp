@@ -4,7 +4,7 @@ using namespace std;
 Scissors::Scissors()
 {
     name = "Scissors";
-    vulnerable = {};
+    vulnerable = {"Rock"};
 
 }
 

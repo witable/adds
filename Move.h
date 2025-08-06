@@ -13,7 +13,6 @@ class Move
     public:
         Move();
         virtual string getName();
-        virtual vector<string> getVulnerable();
-    };
-
+        virtual const vector<string>& getVulnerable() const;
+};
 #endif

@@ -7,9 +7,8 @@ Move::Move()
 
 }
 
-vector<string> Move::getVulnerable()
-{
-  return vulnerable;  
+const vector<string>& Move::getVulnerable() const {
+    return vulnerable;
 }
 
 string Move::getName() {
