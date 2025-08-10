@@ -8,11 +8,11 @@ class Move
 {
     protected:
         string name;
-        vector<string> vulnerable;
+        vector<string> vulnerable; //A vector of strings containing the names of the moves that this move will lose to
 
     public:
         Move();
-        virtual string getName();
+        virtual string getName(); //To check the if the move of the opponent is within the moves vulnerable vector
         virtual const vector<string>& getVulnerable() const;
 };
 #endif
