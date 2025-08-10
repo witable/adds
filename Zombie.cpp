@@ -4,7 +4,7 @@ using namespace std;
 Zombie::Zombie()
 {
     name = "Zombie";
-    vulnerable = {"Robot", "Ninja"};
+    vulnerable = {"Robot", "Ninja"}; // Robot crushes Zombie and Ninja decapitates Zombie
 
 }
 
