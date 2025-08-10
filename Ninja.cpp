@@ -4,7 +4,7 @@ using namespace std;
 Ninja::Ninja()
 {
     name = "Ninja";
-    vulnerable = {"Monkey", "Robot"};
+    vulnerable = {"Monkey", "Robot"}; // Robot chokes Ninja and Monkey fools Ninja
 
 }
 

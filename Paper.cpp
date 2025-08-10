@@ -4,8 +4,7 @@ using namespace std;
 Paper::Paper()
 {
     name = "Paper";
-    vulnerable = {"Scissors"};
-
+    vulnerable = {"Scissors"}; // Scissors cuts Paper
 }
 
 string Paper::getName() {

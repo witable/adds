@@ -23,6 +23,6 @@ Move* Human::makeMove()
     cout << "Enter move: ";
     cin >> moveInput;
     cout << "\n";
-    move = moveMaker.stringToMove(moveInput);
-    return &move;
+    move = moveMaker.stringToMove(moveInput); 
+    return &move; // Pass by reference to ensure an unnecessary copy is not made
 }

@@ -4,7 +4,7 @@ using namespace std;
 
 Player::Player()
 {
-    this->name = "Human";
+    this->name = "Player";
 }
 
 Player::Player(string name)

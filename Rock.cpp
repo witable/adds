@@ -4,7 +4,7 @@ using namespace std;
 Rock::Rock()
 {
     name = "Rock";
-    vulnerable = {"Paper"};
+    vulnerable = {"Paper"}; // Paper covers Rock
 
 }
 

@@ -14,18 +14,22 @@ int main()
     cout << "\n";
     Human  h(name);
     
-    //h.makeMove();
+    string name2;
+    cout << "Enter name: ";
+    cin >> name2;
+    cout << "\n";
+    Human  h2(name2);
+    
     Referee r;
-    Computer c;
 
-    Player* result = r.refGame(&h, &c);
+    Player* result = r.refGame(&h, &h2);
     if (result == &h)
     {
         cout << "Player " << h.getName() << " wins!" << endl;
     }
-    else if (result == &c)
+    else if (result == &h2)
     {
-        cout << "Player " << c.getName() << " wins!" << endl;
+        cout << "Player " << h2.getName() << " wins!" << endl;
     }
     else
     {
