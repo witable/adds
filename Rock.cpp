@@ -8,6 +8,6 @@ Rock::Rock()
 
 }
 
-string Rock::getName() {
-    return name;
+const string& Rock::getName() const {
+    return this->name;
 }

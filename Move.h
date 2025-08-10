@@ -12,7 +12,7 @@ class Move
 
     public:
         Move();
-        virtual string getName(); //To check the if the move of the opponent is within the moves vulnerable vector
-        virtual const vector<string>& getVulnerable() const;
+        virtual const string& getName() const; //To check the if the move of the opponent is within the moves vulnerable vector
+        const vector<string>& getVulnerable() const;
 };
 #endif

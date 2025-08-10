@@ -8,6 +8,6 @@ Ninja::Ninja()
 
 }
 
-string Ninja::getName() {
-    return name;
+const string& Ninja::getName() const {
+    return this->name;
 }
