@@ -8,7 +8,7 @@ class Monkey : public Move
     protected:
     public:
         Monkey();
-        string getName();
+        const string& getName() const;
     };
 
 #endif

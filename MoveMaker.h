@@ -14,10 +14,11 @@
 
 using namespace std;
 
-class MoveMaker
+class MoveMaker // Seperate class for movemaker to ensure single responsiblity principle is followed
 {
 private:
-    unordered_map<string, Move> possibleMoves;
+    unordered_map<string, Move> possibleMoves; // Unordered map used to have constant lookup time complexity
+    // A copy of all the possible moves must be kept within the move maker logic
     Rock rock;
     Paper paper;
     Scissors scissors;
@@ -29,7 +30,7 @@ private:
     
 public:
     MoveMaker();
-    Move stringToMove(string input);
+    Move stringToMove(string input); 
 };
 
 

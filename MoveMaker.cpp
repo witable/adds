@@ -15,5 +15,7 @@ MoveMaker::MoveMaker()
 
 Move MoveMaker::stringToMove(string input)
 {
-    return possibleMoves[input];
+    return possibleMoves[input]; // Uses an unordered map to map the input string to a move type
 }
+
+

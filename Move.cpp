@@ -11,6 +11,6 @@ const vector<string>& Move::getVulnerable() const {
     return vulnerable;
 }
 
-string Move::getName() {
-    return name;
+const string& Move::getName() const {
+    return this->name;
 }
