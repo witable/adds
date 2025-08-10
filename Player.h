@@ -1,7 +1,6 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 
-#include <iostream>
 #include "Move.h"
 #include "MoveMaker.h"
 
@@ -17,7 +16,7 @@ class Player
     public:
         Player();
         string getName();
-        virtual Move* makeMove() = 0;
+        virtual Move* makeMove() = 0; // Pure virtual function as player is never 
         Player(string name);
 };
 

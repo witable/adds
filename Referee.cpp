@@ -1,8 +1,7 @@
-#include <iostream>
 #include "Referee.h"
-
-#include "Player.h"
-#include <bits/stdc++.h>
+#include <vector>
+#include <algorithm>
+#include <iostream>
 using namespace std;
 
 Player* Referee::refGame(Player * player1, Player * player2)
@@ -15,7 +14,7 @@ Player* Referee::refGame(Player * player1, Player * player2)
 
 
     auto it = find(playerOneVulnerable.begin(), playerOneVulnerable.end(), playerTwoMove.getName()); 
-    if (playerOneMove.getName() == playerTwoMove.getName())
+    if (playerOneMove.getName() == playerTwoMove.getName()) //Check for draw 
     {
         return nullptr;
     } 
@@ -23,7 +22,7 @@ Player* Referee::refGame(Player * player1, Player * player2)
     {
         return player2;
     }
-    auto it = find(playerTwoVulnerable.begin(), playerTwoVulnerable.end(), playerOneMove.getName());
+    it = find(playerTwoVulnerable.begin(), playerTwoVulnerable.end(), playerOneMove.getName());
 
     if (it != playerTwoMove.getVulnerable().end())
     {
@@ -31,7 +30,7 @@ Player* Referee::refGame(Player * player1, Player * player2)
         return player1;
     } else 
     {
-        return nullptr;
+        return nullptr; //Return nullptr for any other inputs which resulted from an error
     }
     
 

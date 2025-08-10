@@ -1,4 +1,3 @@
-#include <iostream>
 #include "Player.h"
 using namespace std;
 
@@ -14,6 +13,6 @@ Player::Player(string name)
 
 string Player::getName()
 {
-    return this->name;
+    return this->name; // Returns the name of the player for announcement of the winner
 }
 
