@@ -8,7 +8,7 @@ class Pirate : public Move
     protected:
     public:
         Pirate();
-        string getName();
+        const string& getName() const;
     };
 
 #endif

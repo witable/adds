@@ -8,7 +8,7 @@ class Paper : public Move
     protected:
     public:
         Paper();
-        string getName();
+        const string& getName() const;
     };
 
 #endif

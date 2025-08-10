@@ -8,7 +8,7 @@ class Rock : public Move
     protected:
     public:
         Rock();
-        string getName();
+        const string& getName() const;
     };
 
 #endif

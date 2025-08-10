@@ -8,7 +8,7 @@ class Ninja : public Move
     protected:
     public:
         Ninja();
-        string getName();
+        const string& getName() const;
     };
 
 #endif

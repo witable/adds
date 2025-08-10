@@ -8,7 +8,7 @@ class Zombie : public Move
     protected:
     public:
         Zombie();
-        string getName();
+        const string& getName() const;
     };
 
 #endif

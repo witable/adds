@@ -8,6 +8,6 @@ Zombie::Zombie()
 
 }
 
-string Zombie::getName() {
-    return name;
+const string& Zombie::getName() const {
+    return this->name;
 }

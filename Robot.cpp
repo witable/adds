@@ -4,10 +4,10 @@ using namespace std;
 Robot::Robot()
 {
     name = "Robot";
-    vulnerable = {"Monkey", "Pirate"};
+    vulnerable = {"Monkey", "Pirate"}; // Monkey unplugs Robot and Pirate drowns Robot
 
 }
 
-string Robot::getName() {
-    return name;
+const string& Robot::getName() const {
+    return this->name;
 }

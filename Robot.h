@@ -8,7 +8,7 @@ class Robot : public Move
     protected:
     public:
         Robot();
-        string getName();
+        const string& getName() const;
     };
 
 #endif

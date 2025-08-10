@@ -4,10 +4,10 @@ using namespace std;
 Scissors::Scissors()
 {
     name = "Scissors";
-    vulnerable = {"Rock"};
+    vulnerable = {"Rock"}; // Rock bashes Scissors
 
 }
 
-string Scissors::getName() {
-    return name;
+const string& Scissors::getName() const {
+    return this->name;
 }

@@ -8,7 +8,7 @@ class Scissors : public Move
     protected:
     public:
         Scissors();
-        string getName();
+        const string& getName() const;
     };
 
 #endif

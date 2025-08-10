@@ -4,10 +4,10 @@ using namespace std;
 Pirate::Pirate()
 {
     name = "Pirate";
-    vulnerable = {"Zombie", "Ninja"};
+    vulnerable = {"Zombie", "Ninja"}; // Zombie eats Pirate and Ninja decapitates Zombie
 
 }
 
-string Pirate::getName() {
-    return name;
+const string& Pirate::getName() const {
+    return this->name;
 }
