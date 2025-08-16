@@ -1,14 +1,9 @@
 #include <iostream>
 #include <cmath>
+#include "Truckloads.h"
 
 using namespace std;
 
-class Truckloads
-{
-private:
-public:
-    int numTrucks(int numCrates, int loadSize);
-};
 
 int Truckloads::numTrucks(int numCrates, int loadSize)
 {
@@ -32,11 +27,3 @@ int Truckloads::numTrucks(int numCrates, int loadSize)
             return truckCount + numTrucks(smallHalf,loadSize) + numTrucks(bigHalf,loadSize);
     }
 };
-
-int main()
-{
-    Truckloads truck;
-    cout << truck.numTrucks(1024,5) << "\n";
-
-    return 0;
-}
