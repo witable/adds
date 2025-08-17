@@ -8,7 +8,7 @@ class Reverser
 private:
 public:
     string reverseString(string str);
-    int reverseDigits(int num);
+    int reverseDigit(int num);
 };
 
 

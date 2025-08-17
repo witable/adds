@@ -16,11 +16,11 @@ string Reverser::reverseString(string str)
     }
 };
 
-int Reverser::reverseDigits(int num)
+int Reverser::reverseDigit(int num)
 {
-    if (floor(log10(num)+1)== 1)
+    if (floor(log10(num)+1) == 1)
     {
         return num;
     }
-    return (num % 10) * pow(10,log10(num)) + reverseDigits(floor(num/10));
+    return (num % 10) * pow(10,log10(num)) + reverseDigit(floor(num/10));
 }
