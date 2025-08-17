@@ -18,7 +18,11 @@ string Reverser::reverseString(string str)
 
 int Reverser::reverseDigit(int num)
 {
-    if ((floor(log10(num))) == 0)
+    if (num < 0)
+    {
+        return -1;
+    }
+    if (num < 10)
     {
         return num;
     }
