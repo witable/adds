@@ -5,6 +5,7 @@
     vector<int> Finder::findSubstrings(string s1, string s2) {
 
         vector<int> result;
+        result.reserve(s2.size());
         size_t index = 0;
         
         for(size_t i = 1; i <= s2.size(); i++) {
