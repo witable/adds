@@ -8,7 +8,7 @@
         size_t index = 0;
         
         for(size_t i = 1; i <= s2.size(); i++) {
-            size_t found = s1.find(s2.substr(0, i), index);
+            size_t found = s1.find(s2.c_str(), index, i);
             if (found != string::npos) {
                 index = found;
                 result.push_back(found);
