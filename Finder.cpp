@@ -16,7 +16,6 @@
             } else {
                 result.push_back(-1);
                 result.insert(result.end(), s2.size() - i, -1);
-                index++;
             }
         }
         return result;
