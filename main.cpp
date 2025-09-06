@@ -22,7 +22,7 @@ BubbleSort bubble;
 
 list = quick.sort(list);
 
-for (int i = 0; i < list.size(); i ++)
+for (long unsigned int i = 0; i < list.size(); i ++)
 {
     cout << list[i] << " ";
 }
@@ -30,5 +30,5 @@ cout << "\n";
 
 RecursiveBinarySearch recurse;
 
-cout << recurse.search(list, 6) << "\n";
+cout << recurse.search(list, 1) << "\n";
 }
