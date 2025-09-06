@@ -3,13 +3,13 @@
 RecursiveBinarySearch::RecursiveBinarySearch()
 {
 
-};
+}
 
 RecursiveBinarySearch::~RecursiveBinarySearch()
 {
 
-};
- 
+}
+
 bool RecursiveBinarySearch::search(std::vector<int> list, int num)
 {
     return searchHelper(list, num, 0, list.size()-1);
