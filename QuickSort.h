@@ -8,7 +8,6 @@
 class QuickSort : public Sort
 {
 private:
-    /* data */
 public:
     QuickSort();
     ~QuickSort();
