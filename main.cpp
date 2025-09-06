@@ -1,38 +1,34 @@
+#include "QuickSort.h"
+#include "RecursiveBinarySearch.h"
+#include "BubbleSort.h"
 #include <iostream>
-#include "Player.h"
-#include "Computer.h"
-#include "Human.h"
-#include "Player.h"
-#include "Referee.h"
+#include <vector>
+#include <sstream>
 using namespace std;
- 
+
 int main()
 {
-    string name;
-    cout << "Enter name: ";
-    cin >> name;
-    cout << "\n";
-    Human  h(name);
-    
-    string name2;
-    cout << "Enter name: ";
-    cin >> name2;
-    cout << "\n";
-    Human  h2(name2);
-    
-    Referee r;
+string line;
+getline(cin, line);
+istringstream iss(line);
+vector<int> list;
+int num;
+while (iss >> num) {
+    list.push_back(num);
+}
 
-    Player* result = r.refGame(&h, &h2);
-    if (result == &h)
-    {
-        cout << "Player " << h.getName() << " wins!" << endl;
-    }
-    else if (result == &h2)
-    {
-        cout << "Player " << h2.getName() << " wins!" << endl;
-    }
-    else
-    {
-        cout << "It's a tie!" << endl;
-    }
+QuickSort quick;
+BubbleSort bubble;
+
+list = quick.sort(list);
+
+for (int i = 0; i < list.size(); i ++)
+{
+    cout << list[i] << " ";
+}
+cout << "\n";
+
+RecursiveBinarySearch recurse;
+
+cout << recurse.search(list, 6) << "\n";
 }
