@@ -4,7 +4,6 @@
 class RecursiveBinarySearch
 {
 private:
-
 public:
     RecursiveBinarySearch();
     ~RecursiveBinarySearch();
