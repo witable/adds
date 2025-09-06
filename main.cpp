@@ -8,13 +8,15 @@ using namespace std;
 
 int main()
 {
-string line;
-getline(cin, line);
-istringstream iss(line);
 vector<int> list;
-int num;
-while (iss >> num) {
-    list.push_back(num);
+int i;
+while (true) {
+    cin >> i;
+    list.push_back(i);
+    //cout << i << endl;
+    if (cin.peek() == '\n') {
+        break;
+    } 
 }
 
 QuickSort quick;
@@ -24,6 +26,10 @@ list = quick.sort(list);
 
 
 RecursiveBinarySearch recurse;
-
+/*for (int i = 0; i < list.size(); i++)
+{
+    cout << list[i] << " ";
+}
+cout << "\n";*/
 return recurse.search(list, 1);
 }
