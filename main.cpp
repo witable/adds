@@ -31,5 +31,6 @@ RecursiveBinarySearch recurse;
     cout << list[i] << " ";
 }
 cout << "\n";*/
-return recurse.search(list, 1);
+recurse.search(list, 1);
+return 0;
 }

@@ -20,7 +20,7 @@ std::vector<int> QuickSort::sort(std::vector<int> list)
 
 void QuickSort::quicksorthelper(std::vector<int>& list, int low, int high)
 {
-    if (high-low == 0)
+    if (high-low <= 0)
     {
         return;
     }
