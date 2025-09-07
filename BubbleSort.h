@@ -8,11 +8,11 @@
 class BubbleSort : public Sort
 {
 private:
+    void bubblesortHelper(std::vector<int>& list);
 public:
     BubbleSort();
     ~BubbleSort();
     std::vector<int> sort(std::vector<int> list);
-    void bubblesortHelper(std::vector<int>& list);
 
 };
 

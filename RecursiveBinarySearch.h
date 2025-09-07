@@ -4,10 +4,10 @@
 class RecursiveBinarySearch
 {
 private:
+    bool searchHelper(std::vector<int> list, int num, int low, int high);
 public:
     RecursiveBinarySearch();
     ~RecursiveBinarySearch();
     bool search(std::vector<int>, int);
-    bool searchHelper(std::vector<int> list, int num, int low, int high);
 };
 #endif

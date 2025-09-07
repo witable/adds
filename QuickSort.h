@@ -8,11 +8,11 @@
 class QuickSort : public Sort
 {
 private:
+    void quicksorthelper(std::vector<int>& list, int low, int high);
 public:
     QuickSort();
     ~QuickSort();
     std::vector<int> sort(std::vector<int> list);
-    void quicksorthelper(std::vector<int>& list, int low, int high);
 };
 
 
