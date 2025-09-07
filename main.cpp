@@ -1,6 +1,7 @@
 #include "QuickSort.h"
 #include "RecursiveBinarySearch.h"
 #include "BubbleSort.h"
+#include "Sort.h"
 #include <iostream>
 #include <vector>
 

@@ -5,8 +5,8 @@ class Sort
 {
 public:
     Sort();
-    ~Sort();
-    std::vector<int> sort(std::vector<int> list);
+    virtual ~Sort();
+    virtual std::vector<int> sort(std::vector<int> list);
 };
 
 
