@@ -1,5 +1,4 @@
 #include "QuickSort.h"
-#include <iostream>
 
 QuickSort::QuickSort()
 {

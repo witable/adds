@@ -1,9 +1,6 @@
 #ifndef SORT_H
 #define SORT_H
 #include <vector>
-#include <algorithm>
-
-
 class Sort
 {
 private:
