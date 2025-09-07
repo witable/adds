@@ -1,4 +1,5 @@
 #include "BubbleSort.h"
+#include <algorithm>
 
 std::vector<int> BubbleSort::sort(std::vector<int> list)
 {
