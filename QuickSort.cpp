@@ -1,6 +1,5 @@
 #include "QuickSort.h"
 #include <iostream>
-using namespace std;
 
 QuickSort::QuickSort()
 {
@@ -28,26 +27,26 @@ void QuickSort::quicksorthelper(std::vector<int>& list, int low, int high)
     {
         if (list[low] > list[low+1])
         {
-            swap(list[low],list[low+1]);
+            std::swap(list[low],list[low+1]);
         }
     }
 
     if (high-low >= 2)
     {
-        swap(list[2+low],list[high]);
+        std::swap(list[2+low],list[high]);
         int start = low;
         int pivot = list[high];
         for (int i = low; i < high; i++)
         {
             if (list[i] < pivot)
             {
-                swap(list[i],list[start]);
+                std::swap(list[i],list[start]);
                 start++;
 
             }
 
         }
-        swap(list[start],list[high]);
+        std::swap(list[start],list[high]);
 
         quicksorthelper(list,low,start-1);
         quicksorthelper(list,start+1,high);

@@ -1,5 +1,4 @@
 #include "BubbleSort.h"
-using namespace std;
 
 std::vector<int> BubbleSort::sort(std::vector<int> list)
 {
@@ -15,7 +14,7 @@ void BubbleSort::bubblesortHelper(std::vector<int>& list)
         {
             if (list[j] > list[j+1])
             {
-                swap(list[j],list[j+1]);
+                std::swap(list[j],list[j+1]);
             }
         }
     }
