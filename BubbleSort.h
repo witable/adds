@@ -13,7 +13,6 @@ public:
     BubbleSort();
     ~BubbleSort();
     std::vector<int> sort(std::vector<int> list);
-
 };
 
 
