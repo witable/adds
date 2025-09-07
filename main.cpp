@@ -27,7 +27,7 @@ list = quick.sort(list);
 RecursiveBinarySearch recurse;
 cout << std::boolalpha << recurse.search(list, 1) << " ";
 
-for (int i = 0; i < list.size(); i++)
+for (size_t i = 0; i < list.size(); i++)
 {
     cout << list[i] << " ";
 }
