@@ -2,6 +2,8 @@
 #define QUICKSORT_H
 #include "Sort.h"
 #include <vector>
+#include <algorithm>
+
 class QuickSort : public Sort
 {
 private:
