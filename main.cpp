@@ -20,17 +20,17 @@ while (true) {
 }
 
 QuickSort quick;
-BubbleSort bubble;
 
 list = quick.sort(list);
 
 
 RecursiveBinarySearch recurse;
-/*for (int i = 0; i < list.size(); i++)
+cout << std::boolalpha << recurse.search(list, 1) << " ";
+
+for (int i = 0; i < list.size(); i++)
 {
     cout << list[i] << " ";
 }
-cout << "\n";*/
-recurse.search(list, 1);
+cout << "\n";
 return 0;
 }
