@@ -9,8 +9,8 @@ class Sort
 private:
 public:
     Sort();
-    virtual ~Sort();
-    virtual std::vector<int> sort(std::vector<int> list);
+    ~Sort();
+    std::vector<int> sort(std::vector<int> list);
 };
 
 
