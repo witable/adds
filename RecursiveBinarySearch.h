@@ -1,7 +1,6 @@
 #ifndef RECURSIVEBINARYSEARCH_H
 #define RECURSIVEBINARYSEARCH_H
 #include <vector>
-#include <algorithm>
 
 class RecursiveBinarySearch
 {

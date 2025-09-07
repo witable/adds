@@ -1,6 +1,4 @@
 #include "QuickSort.h"
-#include <vector>
-#include <algorithm>
 
 QuickSort::QuickSort()
 {

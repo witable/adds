@@ -1,5 +1,4 @@
 #include "RecursiveBinarySearch.h"
-#include <vector>
 
 RecursiveBinarySearch::RecursiveBinarySearch()
 {
