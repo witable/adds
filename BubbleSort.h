@@ -2,9 +2,6 @@
 #define BUBBLESORT_H
 #include "Sort.h"
 #include <vector>
-#include <algorithm>
-
-
 class BubbleSort : public Sort
 {
 private:
@@ -14,7 +11,5 @@ public:
     ~BubbleSort();
     std::vector<int> sort(std::vector<int> list);
 };
-
-
 
 #endif

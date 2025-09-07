@@ -2,9 +2,6 @@
 #define QUICKSORT_H
 #include "Sort.h"
 #include <vector>
-#include <algorithm>
-
-
 class QuickSort : public Sort
 {
 private:
@@ -14,6 +11,5 @@ public:
     ~QuickSort();
     std::vector<int> sort(std::vector<int> list);
 };
-
 
 #endif
