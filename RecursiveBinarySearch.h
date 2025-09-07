@@ -9,7 +9,7 @@ private:
 public:
     RecursiveBinarySearch();
     ~RecursiveBinarySearch();
-    bool search(std::vector<int>, int);
+    bool search(std::vector<int> list, int num);
 };
 
 #endif
