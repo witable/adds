@@ -10,4 +10,5 @@ public:
     ~RecursiveBinarySearch();
     bool search(std::vector<int>, int);
 };
+
 #endif
