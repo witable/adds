@@ -12,4 +12,4 @@ public:
     bool search(std::vector<int> list, int num);
 };
 
-#endif 
+#endif
