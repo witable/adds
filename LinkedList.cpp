@@ -130,7 +130,7 @@ int LinkedList::get(int pos)
     Node* currentNode = head;
 
     
-    for (int i = 0; i < pos; i++)
+    for (int i = 1; i < pos; i++)
     {
     if (currentNode == nullptr)
     {
