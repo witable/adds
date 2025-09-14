@@ -173,7 +173,7 @@ void LinkedList::printList()
         std::cout << currentNode->getData() << " ";
         currentNode = currentNode->getLink();
     }
-    std::cout << currentNode->getData() << " ";
+    std::cout << currentNode->getData();
     std::cout << "]";
 
 }
