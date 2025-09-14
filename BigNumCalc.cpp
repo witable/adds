@@ -92,32 +92,33 @@ std::list<int> BigNumCalc::sub(std::list<int> num1, std::list<int> num2)
 
     while (iter1 != num1.end())
     {
-        int diff = *iter1 - carry - (iter2 != num2.end() ? *iter2 : 0);
-        if (carry < 0)
+        int difference = *iter1 - carry - (iter2 != num2.end() ? *iter2 : 0);
+        if (difference < 0)
         {
-            diff += 10;
+            difference += 10;
             carry = 1;
         } else
         {
             carry = 0;
         }
-        num.push_front(diff);
+        num.push_front(difference);
         ++iter1;
         if (iter2 != num2.end())
         {
             ++iter2;
         }
 
-        while (!num.empty() && num.front() == 0)
-        {
-            num.pop_front();
-        }
-        if (num.empty())
-        {
-            num.push_back(0);
-        }
-
     }
+    while (!num.empty() && num.front() == 0)
+    {
+        num.pop_front();
+    }
+    if (num.empty())
+    {
+        num.push_back(0);
+    }
+
+    return num;
 }
 
 std::list<int> BigNumCalc::buildBigNum(std::string string)
