@@ -50,21 +50,13 @@ void LinkedList::insertPosition(int pos, int newNum)
 
 LinkedList::~LinkedList()
 {
-    if (head == nullptr)
-    {
-        return;
-    }
     Node* current = head;
-    Node* link;
-    while(current->getLink() != nullptr)
+    while (current)
     {
-        link = current->getLink();
+        Node* next = current->getLink();
         delete current;
-        current = link;
+        current = next;
     }
-    link = current->getLink();
-    delete current;
-
 }
 
 
@@ -76,12 +68,13 @@ bool LinkedList::deletePosition(int pos)
     if (pos < 1 || currentNode->getLink() == nullptr)
     {
         return false;
-    } else if (pos == 1)
+    }
+    if (pos == 1)
     {
-        temp = head->getLink();
+        Node* temp = head->getLink();
         delete head;
         head = temp;
-        return 1;
+        return true;
     }
     
     int count = 1;
