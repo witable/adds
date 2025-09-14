@@ -28,39 +28,23 @@ LinkedList::LinkedList(int* arr, int len)
 
 void LinkedList::insertPosition(int pos, int newNum)
 {
-    Node* currentNode = head;
-
-    if (pos <= 1)
+    if (pos <= 1 || head == nullptr) 
     {
-        Node* node;
-        node = new Node(newNum,head);
-        head = node;
+        head = new Node(newNum, head);
         return;
-
-    } else
-    {
-        
-        while (currentNode->getLink() != nullptr)
-        {
-            
-            if (currentNode->getLink() == nullptr)
-            {
-                Node* node;
-                node = new Node(newNum);
-                currentNode->newLink(node);
-                pos = 0;
-            } else
-            {
-                currentNode = currentNode->getLink();
-            }
-        }
-        if (pos != 0)
-        {
-                Node* node;
-                node = new Node(newNum);
-                currentNode->newLink(node);
-        }
     }
+
+    Node* currentNode = head;
+    int count = 1;
+
+    while (count < pos - 1 && currentNode->getLink() != nullptr)
+    {
+        currentNode = currentNode->getLink();
+        count++;
+    }
+
+    Node* node = new Node(newNum, currentNode->getLink());
+    currentNode->newLink(node);
 }
 
 
