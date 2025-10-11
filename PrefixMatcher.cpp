@@ -1,6 +1,11 @@
 #include "PrefixMatcher.h"
 
-class PrefixMatcher
+int selectRouter(string networkAddress)
 {
 
-};
+}
+
+void insert(string address, int routerNumber)
+{
+    
+}

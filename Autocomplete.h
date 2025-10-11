@@ -7,10 +7,16 @@ using namespace std;
 class Autocomplete
 {
 private:
+    struct TrieNode {
+        bool isEndOfWord;
+        vector<TrieNode *> children;
+    };
+    
+
+
 
 public:
     vector<string> getSuggestions(string partialWord);  // return the known words that start with partialWord
-
     void insert(string word); // add a word to the known words
 };
 
