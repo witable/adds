@@ -39,4 +39,3 @@ void PrefixMatcher::insert(string address, int routerNumber)
     }
     currentTrie->routerNumber = routerNumber;
 }
-
