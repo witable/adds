@@ -11,7 +11,7 @@ vector<string> Autocomplete::getSuggestions(string partialWord)
     }
     for (int i = 0; i < partialWord.length(); i++)
     {
-        int num = (int)partialWord[i]-97; 
+        int num = partialWord[i]; 
         if (currentTrie->children[num] == nullptr)
         {
             return words;
@@ -49,7 +49,7 @@ void Autocomplete::insert(string word)
     TrieNode* currentTrie = root;
     for (int i = 0; i < word.size(); i++)
     {
-        int num = (int)word[i]-(int)('a'); 
+        int num = word[i]-'a'; 
         if (currentTrie->children[num] == nullptr)
         {
             currentTrie->children[num] = new TrieNode();

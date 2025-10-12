@@ -15,7 +15,7 @@ int PrefixMatcher::selectRouter(string networkAddress)
         {
             currRouterNumber = currentTrie->routerNumber;
         }
-        int num = (int)(networkAddress[i]-'0');
+        int num = networkAddress[i]-'0';
         if (currentTrie->children[num] == nullptr)
         {
             return currRouterNumber;
@@ -30,7 +30,7 @@ void PrefixMatcher::insert(string address, int routerNumber)
     TrieNode* currentTrie = root;
     for (int i = 0; i < address.size(); i++)
     {
-        int num = (int)(address[i]-'0'); 
+        int num = address[i]-'0'; 
         if (currentTrie->children[num] == nullptr)
         {
             currentTrie->children[num] = new TrieNode();
