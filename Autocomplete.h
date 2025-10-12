@@ -7,6 +7,17 @@ using namespace std;
 struct TrieNode {
     bool isEndOfWord = false;
     TrieNode* children[26] = {nullptr};
+    ~TrieNode()
+    {
+        for (int i = 0; i < 26; i++)
+        {
+            if (children[i] != nullptr)
+            {
+                delete children[i];
+            }
+            
+        }
+    }
 };
 
 class Autocomplete
@@ -18,6 +29,10 @@ public:
     Autocomplete()
     {
         root = new TrieNode();
+    }
+    ~Autocomplete()
+    {
+        delete root;
     }
     vector<string> getSuggestions(string partialWord);  // return the known words that start with partialWord
     void insert(string word); // add a word to the known words
