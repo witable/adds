@@ -195,7 +195,7 @@ public:
         this->tree.at(num) = this->tree.at(this->tree.size() - 1);
         this->tree.pop_back();
 
-        this->heapify(this->tree);
+        this->heapifyDown(heapIndex);
     }
 
 
