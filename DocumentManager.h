@@ -61,13 +61,3 @@ public:
         }
     }
 };
-
-int main()
-{
-    DocumentManager docManager;
-    docManager.addPatron(1);
-    docManager.addDocument("arad",1,1);
-    cout << docManager.borrowDocument(1,1) << "\n";
-    cout << docManager.borrowDocument(1,1) << "\n";
-    cout << docManager.search("ara2d") << "\n";
-}
