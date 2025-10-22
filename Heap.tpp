@@ -190,13 +190,9 @@ public:
         std::cout << "removal in progress" << "\n";
         auto it = find(this->tree.begin(), this->tree.end(), value);
 
-        const heapIndex ROOT_INDEX = distance(this->tree.begin(), it);
+        const heapIndex num = distance(this->tree.begin(), it);
 
-        // Replace the root with the last element
-        T topElement = this->tree.at(ROOT_INDEX);
-        //std::cout << "Removed top element: " << topElement << std::endl;
-        //std::cout << "Placing index: " << (this->tree.size() - 1) << "(" << this->tree.at(this->tree.size() - 1) << ") to the top" << std::endl;
-        this->tree.at(ROOT_INDEX) = this->tree.at(this->tree.size() - 1);
+        this->tree.at(num) = this->tree.at(this->tree.size() - 1);
         this->tree.pop_back();
 
         this->heapify(this->tree);
